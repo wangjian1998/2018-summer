@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"></title>
+</head>
+
+<body>
+
+    <div id="intro">Dom简介</div>
+    <div id="main">
+        <P>The Dom is very useful 1</P>
+        <P>The Dom is very useful 2</P>
+        <P>The Dom is very useful 3</P>
+    </div>
+    <div class="content">1</div>
+    <div class="content">2</div>
+    <div class="content">3</div>
+    <script type="text/javascript">
+        var intro = document.getElementById("intro");
+        var main = document.getElementById("main");
+        debugger;
+        var p = main.getElementsByTagName("p")[0];
+        console.log(p);
+        var content = document.getElementsByClassName("content")[0];
+    </script>
+</body>
+
+</html>

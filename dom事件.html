@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div onclick="alert('helloworld')">按钮</div>
+    <div id="main">我是main</div>
+    <div id="btn">我是btn</div>
+    <script type="text/javascript">
+        var main=document.getElementById("main");
+        main.onclick =function(){
+            alert('main被触发了');
+        }
+        var btn=document.getElementById("btn");
+        btn.addEventListener("click", function(){
+            alert("btn也被触发了");
+        });
+    </script>
+</body>
+</html>

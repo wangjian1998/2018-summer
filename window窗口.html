@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    <button onclick="openwindow()">创建窗口</button>
+    <button onclick="myfunction()">调整窗口</button>
+    <button onclick="movefunction()">移动窗口</button>
+    <button onclick="closefunction()">关闭窗口</button>
+    <script type="text/javascript">
+       var w;
+       function openwindow(){
+        w=window.open('','','width=300,height=300');
+       }
+       function myfunction(){
+           w.resizeTo(500,500);
+           w.focus();
+       }
+       function movefunction(){
+           w.moveTo(100,100);
+       }
+       function closefunction(){
+          w.close();           
+       }
+    </script>
+</body>
+</html>
